@@ -21,10 +21,8 @@
     'Welcome back, Andrew'
 */
 
-//CODE HERE
-
-
-
+greetUser = (username) => `Welcome back, ${username}`
+//console.log(greetUser("Andrew"));
 
 
 //////////////////PROBLEM 2////////////////////
@@ -49,8 +47,14 @@
 
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
-//CODE HERE
-
+canWeDeliver = (zipCode) => {
+    if(deliveryAreaZipCodes.includes(zipCode)) {
+        return "You're in our delivery zone!"
+    } else {
+        return "Sorry, we can't deliver to that address."
+    }
+}
+//console.log(canWeDeliver(86059));
 
 
 /* 
