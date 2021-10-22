@@ -86,7 +86,7 @@ canWeDeliverTwo = (zipCode) => {
         }
     }
 }
-console.log(canWeDeliverTwo(89213));
+//console.log(canWeDeliverTwo(89213));
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -120,10 +120,10 @@ const deals = [
     to be itself, but use the `replace` method
     to replace the 15 with a 10.
 */
-
-//CODE HERE
-
-
+    
+    let {title} = deals;
+   // deals[title] = title].replace('15','10');
+    console.log(title);
 
 /*
     The restaurant is going to continue its
