@@ -74,8 +74,19 @@ canWeDeliver = (zipCode) => {
     Name your new function `canWeDeliverTwo`.
 */
 
-// CODE HERE
-
+canWeDeliverTwo = (zipCode) => {
+    for(i = 0; i<deliveryAreaZipCodes.length; i++) {
+        if(zipCode === deliveryAreaZipCodes[i]) {
+            return "You're in our delivery zone!"
+        }
+    }
+    for(i = 0; i<deliveryAreaZipCodes.length; i++) {
+        if(zipCode !== deliveryAreaZipCodes[i]) {
+            return "Sorry, we don't deliver to that address."
+        }
+    }
+}
+console.log(canWeDeliverTwo(89213));
 
 //////////////////PROBLEM 3////////////////////
 /* 
