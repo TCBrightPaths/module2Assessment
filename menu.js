@@ -30,7 +30,14 @@
     'kids'
 */
 
-//CODE HERE
+let pizza = {
+    name: "Cheese Pizza",
+    price: 8,
+    category: "entree",
+    popularity: 10,
+    rating: 10,
+    tags: ["vegetarian", "gluten free", "kids"]
+}
 
 
 
