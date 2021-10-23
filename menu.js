@@ -49,7 +49,7 @@ let pizza = {
     Use dot notation to access the value.
 */
 
-//CODE HERE
+console.log(pizza.popularity);
 
 
 /*
@@ -59,7 +59,7 @@ let pizza = {
     get the value.
 */
 
-//CODE HERE
+console.log(pizza.tags[1]);
 
 
 /*
@@ -69,7 +69,8 @@ let pizza = {
     Print the value of your new price variable.
 */
 
-//CODE HERE
+let {price} = pizza;
+console.log(`$${price.toFixed(2)}`);
 
 
 /*
