@@ -152,7 +152,7 @@ let filteredTags = (item) => {
 
 
 const filteredFood = foodArr.filter(filteredTags);
-console.log(filteredFood);
+//console.log(filteredFood);
 
 
 //////////////////PROBLEM 5////////////////////
@@ -194,7 +194,18 @@ console.log(filteredFood);
     Return the filtered array from the entire function
 */
 
-//CODE HERE
+let filterByProperty = (property, number, type) => {
+    let myOrder = foodArr.filter((item) => {
+        if(type === 'above'){
+            return item[property] > number
+        } else {
+            return item[property] < number
+        }
+    });
+    console.log(myOrder);
+}
+    
+
 
 
 /*
@@ -204,4 +215,4 @@ console.log(filteredFood);
     You'll have to console.log to see the filtered array
 */
 
-//CODE HERE
+filterByProperty('price', 12, 'below');
