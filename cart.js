@@ -84,8 +84,11 @@ let calcFinalPrice = (cartTotal, couponValue, tax) => {
 */
 
 /*
-    TEXT ANSWER HERE
-
+    //My customer object will have the following properties: first name, last name, phone, and th source of the order. 
+    //I chose those properties because they are the actual information that restaurants typically ask me when I go to pick up a dinner order or when a dinner order is delivered. 
+    //For firstName and lastName, I will use strings since these variables are like words.
+    //phone will take the number data type since number will include only numbers, no dashes or parantheses.
+    //orderSource will be an array with strings inside because it is a value that can only be a handful of choices.  
 */
 
 /*
@@ -93,4 +96,9 @@ let calcFinalPrice = (cartTotal, couponValue, tax) => {
     guidelines.
 */
 
-//CODE HERE
+let customer = {
+    firstName: "Tamara",
+    lastName: "Chance",
+    phone: 2974790,
+    orderSource: ["phone", "web", "mobile app"]
+}
