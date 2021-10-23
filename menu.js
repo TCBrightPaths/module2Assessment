@@ -146,11 +146,13 @@ let foodArr = [{
     You can check for any tag that at least 1 of
     your food objects has.
 */
+let filteredTags = (item) => {
+    return item['tags'].includes("meatlovers");
+}
 
-//CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
-
+const filteredFood = foodArr.filter(filteredTags);
+console.log(filteredFood);
 
 
 //////////////////PROBLEM 5////////////////////
