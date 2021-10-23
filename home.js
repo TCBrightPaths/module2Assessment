@@ -124,7 +124,7 @@ const deals = [
 let replaceDeal = (item) => {
     return item.replace(15, 10);
 }
-console.log(replaceDeal(deals[0]['title']));
+//console.log(replaceDeal(deals[0]['title']));
 
 
 /*
@@ -140,4 +140,7 @@ console.log(replaceDeal(deals[0]['title']));
     to be displaying wrong on the live site.
 */
 
-//CODE HERE
+let replaceDeal2 = (item) => {
+    return item.replace('March', 'April').trim();
+}
+console.log(replaceDeal2(deals[1]['desc']));
