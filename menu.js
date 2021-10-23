@@ -80,7 +80,8 @@ console.log(`$${price.toFixed(2)}`);
     Print the value of your category variable. 
 */
 
-//CODE HERE
+let {category} = pizza;
+console.log(category);
 
 
 //////////////////PROBLEM 3////////////////////
@@ -95,7 +96,42 @@ console.log(`$${price.toFixed(2)}`);
     data in some functions that you'll write.
 */
 
-//CODE HERE
+let foodArr = [{
+    name: "Pepperoni Pizza",
+    price: 10,
+    category: "entree",
+    popularity: 10,
+    rating: 8,
+    tags: ["meatlovers", "kids", "spicy"]  
+}, {
+    name: "Cheese Pizza",
+    price: 8,
+    category: "entree",
+    popularity: 10,
+    rating: 10,
+    tags:["vegetarian", "gluten free", "kids"]
+}, {
+    name: "Supreme Pizza",
+    price: 12,
+    category: "entree",
+    popularity: 7,
+    rating: 8,
+    tags:["vegetarian", "specialty"]
+}, {
+    name: "Hawaiian Pizza",
+    price: 12,
+    category: "entree",
+    popularity: 10,
+    rating: 9,
+    tags:["vegetarian", "spicy", "specialty"]
+}, {
+    name: "White Pizza",
+    price: 8,
+    category: "entree",
+    popularity: 6,
+    rating: 10,
+    tags: ["meatlovers", "specialty"]
+}]
 
 
 
