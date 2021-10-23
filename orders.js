@@ -31,11 +31,14 @@
 
 class Ticket {
     constructor (items, orderTime, customerId) {
+        this.items = items;
+        this.orderTime = orderTime;
+        this.customerId = customerId;
         this.status = 'queued';
     }
     updateStatus(newStatus) {
         this.status = newStatus;
-        console.log(`The order for customer ${customerId} is now ${this.status}`);
+        console.log(`The order for customer ${this.customerId} is now ${this.status}`);
     }
 }
 
@@ -52,7 +55,10 @@ class Ticket {
     customer: 575
 */
 
-//CODE HERE
+let firstTicket = new Ticket ();
+firstTicket.items = "pizza, bread, and soda";
+firstTicket.orderTime = "7:03 PM";
+firstTicket.customerId = 575
 
 
 /*
@@ -61,4 +67,4 @@ class Ticket {
     'cooking'
 */
 
-//CODE HERE
+firstTicket.updateStatus('cooking');
