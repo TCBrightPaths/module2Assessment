@@ -121,9 +121,11 @@ const deals = [
     to replace the 15 with a 10.
 */
     
-    let {title} = deals;
-   // deals[title] = title].replace('15','10');
-    console.log(title);
+let replaceDeal = (item) => {
+    return item.replace(15, 10);
+}
+console.log(replaceDeal(deals[0]['title']));
+
 
 /*
     The restaurant is going to continue its
