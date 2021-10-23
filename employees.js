@@ -19,7 +19,15 @@
     stored on the object.
 */
 
-//CODE HERE
+class Employee {
+    constructor(name, shifts) {
+        this.name = name;
+        this.shifts = shifts;
+    }
+    getSchedule () {
+        return `${this.name} works on ${this.shifts}.`;
+    }
+}
 
 
 
@@ -33,14 +41,16 @@
     shifts: weekday mornings, weekday afternoons
 */
 
-//CODE HERE
+const empOne = new Employee();
+empOne.name = "Jess";
+empOne.shifts = "weekday mornings, weekday afternoons"
 
 /*
     Call the `getSchedule` method on the
     `empOne` object.
 */
 
-//CODE HERE
+//console.log(empOne.getSchedule());
 
 
 /*
@@ -55,9 +65,11 @@
     dot or bracket notation.
 */
 
-//CODE HERE
+let empTwo = {...empOne};
+//console.log(empTwo);
 
-
+empTwo.name = "Nick";
+//console.log(empTwo);
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -82,7 +94,18 @@
     the employees array. 
 */
 
-//CODE HERE
+class Manager extends Employee {
+    constructor() {
+        super();
+        this.employees = employees; //employees that report to this manager
+    }
+    getEmployees () {
+        console.log(`${this.name} manages ${this.employees}.`);
+    }
+    addEmployees (emp) {
+        this.employees.push(emp);
+    }
+}
 
 
 
