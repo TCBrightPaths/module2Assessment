@@ -95,7 +95,7 @@ empTwo.name = "Nick";
 */
 
 class Manager extends Employee {
-    constructor() {
+    constructor(employees) {
         super();
         this.employees = employees; //employees that report to this manager
     }
@@ -120,15 +120,17 @@ class Manager extends Employee {
     employees: Cece and Schmidt
 */
 
-//CODE HERE
-
+const manager = new Manager();
+manager.name = "Winston";
+manager.shifts = "weekday mornings, weekday afternoons";
+manager.employees = ["Cece", "Schmidt"];
 
 /*
     Call the `getEmployees` method on the
     `manager` object.  
 */
 
-//CODE HERE
+//console.log(manager.getEmployees());
 
 /*
     Call the `addEmployee` method on the 
@@ -136,7 +138,7 @@ class Manager extends Employee {
     'Coach' or whatever name you'd like.
 */
 
-//CODE HERE 
+//console.log(manager.addEmployees('Coach'));
 
 /*
     Call the `getEmployees` method on the
@@ -144,4 +146,4 @@ class Manager extends Employee {
     that an employee was added.
 */
 
-//CODE HERE
+console.log(manager.getEmployees());
